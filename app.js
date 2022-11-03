@@ -136,4 +136,53 @@ const mergedObj = { ...obj1, ...obj2 };
 /************** Objects End *******************/
 
 
+/************** loop start *******************/
+
+// for loop 
+
+for(let i = 0; i < 11;  i++){
+    if(i % 2 == 0){
+        console.log('This is even number :', i)
+    }
+    else{
+        console.log('This is Odd Number :',i)
+    }
+}
+
+
+
+// for of 
+// array
+const students = ['Arif', 'Sara', 'Shadin'];
+
+// using for...of
+for ( let element of students ) {
+
+    // display the values
+    console.log(element);
+}
+
+
+// for in 
+
+const salaries= {
+    Jack : 24000,
+    Paul : 34000,
+    Monica : 55000
+}
+
+// using for...in
+for ( let i in salaries) {
+
+    // add a currency symbol
+    let salary =salaries[i];
+
+    // display the values
+    console.log(salary);
+}
+/************** Loop End *******************/
+
+
+
+
 // https://github.com/sabbir880/js-fandamentals
