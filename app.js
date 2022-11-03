@@ -100,5 +100,40 @@ month.splice(1 , 0 , 'Feb')
 console.log(month)
 
 
+// spreed operator
+const arr = [1, 2, 3];
+const arr2 = [...arr];
+
+// console.log(arr2)
 
 //************/ End Array *********** //
+
+/************** Objects Start *******************/
+var object = { Name: 'Ariful',
+    Roll: 10, 
+    Pass:'true',
+ };
+//  values
+       console.log(Object.values(object));
+// keys
+       console.log(Object.keys(object));
+// entries 
+       console.log(Object.entries(object));
+// hasOwn 
+
+       console.log(Object.hasOwn(object, "Name"));
+
+// spreed operator 
+const obj1 = { food: 'Cake', price: 42 };
+const obj2 = { food: 'Biskit', price: 13 };
+
+const clonedObj = { ...obj1 };
+// { food: "bar", x: 42 }
+
+const mergedObj = { ...obj1, ...obj2 };
+// { food: "baz", x: 42, y: 13 }
+
+/************** Objects End *******************/
+
+
+// https://github.com/sabbir880/js-fandamentals
